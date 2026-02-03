@@ -1,10 +1,12 @@
 {
-  "name": "Mkids Asistencia",
+  "name": "Mkids – Registro de Asistencia",
   "short_name": "Mkids",
-  "start_url": "./",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#e53935",
+  "background_color": "#000000",
+  "theme_color": "#FAB400",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icons/icon-192.png",
