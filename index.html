@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mkids Asistencia</title>
+  <meta charset="UTF-8" />
+  <title>Mkids – Registro de Asistencia</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FAB400" />
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#e53935">
-
-  <!-- iOS -->
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Mkids">
 
-  <!-- ICONOS -->
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
-
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       height: 100%;
+      background: #000;
     }
     iframe {
       border: none;
@@ -28,18 +28,18 @@
     }
   </style>
 </head>
-<body>
 
-  <!-- TU APP REAL -->
+<body>
+  <!-- Carga tu WebApp real -->
   <iframe
-    src="https://script.google.com/macros/s/AKfycbwbA0pge_nQ2qAVD3rJQpG5XxYUcgWJDUzRjmFvbm-C52FlK4zjIE08b8-IsUSwgoFv/exec">
-  </iframe>
+    src="https://script.google.com/macros/s/AKfycbwbA0pge_nQ2qAVD3rJQpG5XxYUcgWJDUzRjmFvbm-C52FlK4zjIE08b8-IsUSwgoFv/exec"
+    allow="camera; microphone"
+  ></iframe>
 
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
   </script>
-
 </body>
 </html>
