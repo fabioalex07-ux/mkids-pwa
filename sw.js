@@ -16,3 +16,12 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/mkids-pwa/sw.js')
+      .then(() => console.log('SW registrado'))
+      .catch(err => console.error('SW error', err));
+  });
+}
+</script>
