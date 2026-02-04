@@ -1,8 +1,9 @@
 {
-  "name": "Mkids – Registro de Asistencia",
+  "name": "Asistencia Mkids",
   "short_name": "Mkids",
-  "start_url": "./index.html",
-  "scope": "./",
+  "description": "Registro de asistencia Mkids",
+  "start_url": "/mkids-pwa/index.html",
+  "scope": "/mkids-pwa/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#FAB400",
